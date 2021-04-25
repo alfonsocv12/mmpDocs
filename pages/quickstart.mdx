@@ -1,0 +1,112 @@
+import Callout from 'nextra-theme-docs/callout'
+import Subtitle from 'components/subtitle'
+
+# Quick Start
+<Subtitle title="Fast lane"/>
+
+## Installation
+
+Because the program is on alpha at this point we just have one way to install it.
+python ^3 is required.
+
+```bash
+$ pip3 install mmp
+```
+
+## First commands
+
+For the program to work you need to use the python standard requirements.txt, I'm
+thinking about moving that to a json base modules file but we will see how far
+that future is.
+
+You can use the mmp init to create your requirements.txt file and pip_modules.
+
+<Callout>
+  Adding pip_modules to git ignore its recommended
+</Callout>
+
+### Init
+
+```bash
+$ mmp init
+requirements.txt pip_modules/
+```
+
+### Install modules
+
+With this done you can start adding some modules to your project just by running
+
+```bash
+$ mmp install [module_name]
+```
+
+That command not only adds the module to your pip_modules the command also updates,
+the requirements.txt file adding the module like this.
+
+```text
+[module_name]==[module_version_installed]
+```
+
+### Uninstall
+
+You can also uninstall modules by running the uninstall command
+
+```bash
+$ mmp uninstall [module_name]
+```
+
+This will remove the module from the requirements.txt
+
+<Callout emoji='👇🏾'>
+  The program does not uninstall the modules that were installed with the uninstall
+  module.
+  <br/>
+  If you want to reinstall all the modules run this command
+
+  ```bash
+  $ mmp clean
+  ```
+</Callout>
+
+
+## Other people
+
+For other people to install all the modules wen they clone the repository its ass
+simple to just run
+
+```bash
+$ mmp install
+```
+
+This will install all the modules on the requirements.txt file
+
+## Run project
+
+To run your project using you pip_modules its super easy, you just need to add the
+prefix mmp if you want to use a cli solution on your pip_modules or mmp run to run
+your program
+
+```bash
+$ mmp orator make:migration Example -m
+$ mmp run
+```
+
+### mmp run
+
+The run command by default will run run.py file on the repository that the command
+was used, but you can add a specific file to run by adding the path at the end
+
+```bash
+$ mmp run [path_to_file][file.py]
+```
+
+## Needing More
+
+Every command on the cli has helps build in just add -h to whatever you want to
+know about.
+
+Also [here](docs) are a more deep documentation of the cli
+
+<Callout emoji='🚫'>
+  The deep docs are not ready yet
+</Callout>
