@@ -1,0 +1,31 @@
+# About mmp
+<div>
+  <p className="text-lg mb-2 text-gray-600 md:text-xl">Python module manager</p>
+</div>
+## Why
+
+The mmp project was created, to solve the library handling problem with python
+the
+
+```bash
+$ source [path_to_virtualenv]/bin/activate
+```
+
+Was an excellent solution in the beginning but its not suitable for the standards
+of today, python its getting better and better day by day and the community is one
+of the largest.
+
+I have been using libraries on almost every project that i have created with python
+and the trouble of trowing this command to get a crontab running was to big of a
+hassle.
+
+```bash
+$ [path_to_your_script][path_to_virtualenv]/bin/python [path_to_your_script][script_to_run]
+```
+
+Looking to that monstrosity doing this its a lot better
+
+```
+$ cd [path_to_your_script]
+$ mmp run [script_to_run]
+```

@@ -1,9 +1,10 @@
+import Link from 'next/link'
+
 export default {
   repository: 'https://github.com/alfonsocv12/mmp', // project repo
   docsRepository: 'https://github.com/alfonsocv12/mmpDocs', // docs repo
   branch: 'master', // branch of docs
   path: '/', // path of docs
-  titleSuffix: ' – Nextra',
   nextLinks: true,
   prevLinks: true,
   search: true,
@@ -13,7 +14,6 @@ export default {
   footerText: 'MIT 2020 © Alfonso Villalobos',
   footerEditOnGitHubLink: true, // will link to the docs repo
   logo: <>
-    <svg>...</svg>
     <span>Module manager Py</span>
   </>,
   head: <>
