@@ -11,7 +11,9 @@ export default {
   customSearch: null, // customizable, you can use algolia for example
   darkMode: true,
   footer: true,
-  footerText: 'MIT 2020 © Alfonso Villalobos',
+  footerText: <>
+    MIT {new Date().getFullYear()} © Alfonso Villalobos
+  </>,
   footerEditOnGitHubLink: true, // will link to the docs repo
   logo: <>
     <span>Module manager Py</span>
