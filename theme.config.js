@@ -30,6 +30,15 @@ export default {
     <meta name="description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    //MSG app
+    <meta name="msapplication-TileColor" content="#000000">
+	  <meta name="msapplication-config" content="/browserconfig.xml">
+
+    //Twitter
+    <meta name="twitter:site" content="@mmp-y"/>
+    <meta name="twitter:creator" content="alfonso102"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+
 
     //Open Graph / Facebook
     <meta property="og:type" content="website"/>
@@ -38,12 +47,5 @@ export default {
     <meta property="og:title" content="mmp - Module Manager Python"/>
     <meta property="og:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
     <meta property="og:image" content="https://www.mmp-y.com/owl.png"/>
-
-    //Twitter
-    <meta property="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:url" content="https://www.mmp-y.com/"/>
-    <meta property="twitter:title" content="mmp - Module Manager Python"/>
-    <meta property="twitter:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
-    <meta property="twitter:image" content="https://www.mmp-y.com/owl.png"/>
   </>
 }
