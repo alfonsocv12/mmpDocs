@@ -24,24 +24,25 @@ export default {
     <span className="ml-1">Module Manager Py</span>
   </>,
   head: <>
-    <!-- Primary Meta Tags -->
+    //Primary Meta Tags
     <title>mmp - Module Manager Python</title>
-    <meta name="title" content="mmp - Module Manager Python">
-    <meta name="description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli">
+    <meta name="title" content="mmp - Module Manager Python"/>
+    <meta name="description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mmp-y.com/">
-    <meta property="og:title" content="mmp - Module Manager Python">
-    <meta property="og:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli">
-    <meta property="og:image" content="https://www.mmp-y.com/owl-412.svg">
+    //Open Graph / Facebook
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.mmp-y.com/"/>
+    <meta property="og:title" content="mmp - Module Manager Python"/>
+    <meta property="og:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
+    <meta property="og:image" content="https://www.mmp-y.com/owl-412.svg"/>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.mmp-y.com/">
-    <meta property="twitter:title" content="mmp - Module Manager Python">
-    <meta property="twitter:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli">
-    <meta property="twitter:image" content="https://www.mmp-y.com/owl-412.svg">
+    //Twitter
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="https://www.mmp-y.com/"/>
+    <meta property="twitter:title" content="mmp - Module Manager Python"/>
+    <meta property="twitter:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
+    <meta property="twitter:image" content="https://www.mmp-y.com/owl-412.svg"/>
   </>
 }
