@@ -31,8 +31,8 @@ export default {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     //MSG app
-    <meta name="msapplication-TileColor" content="#000000">
-	  <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#000000"/>
+	  <meta name="msapplication-config" content="/browserconfig.xml"/>
 
     //Twitter
     <meta name="twitter:site" content="@mmp-y"/>
