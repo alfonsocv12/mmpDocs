@@ -37,13 +37,13 @@ export default {
     <meta property="og:site_name" content="mmp docs"/>
     <meta property="og:title" content="mmp - Module Manager Python"/>
     <meta property="og:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
-    <meta property="og:image" content="https://www.mmp-y.com/owl-412.svg"/>
+    <meta property="og:image" content="https://www.mmp-y.com/owl.png"/>
 
     //Twitter
     <meta property="twitter:card" content="summary_large_image"/>
     <meta property="twitter:url" content="https://www.mmp-y.com/"/>
     <meta property="twitter:title" content="mmp - Module Manager Python"/>
     <meta property="twitter:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
-    <meta property="twitter:image" content="https://www.mmp-y.com/owl-412.svg"/>
+    <meta property="twitter:image" content="https://www.mmp-y.com/owl.png"/>
   </>
 }
