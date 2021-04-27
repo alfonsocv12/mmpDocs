@@ -34,6 +34,7 @@ export default {
     //Open Graph / Facebook
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.mmp-y.com/"/>
+    <meta property="og:site_name" content="mmp docs"/>
     <meta property="og:title" content="mmp - Module Manager Python"/>
     <meta property="og:description" content="This is the mmp documentation page, where you will find our quick start and the full explanation of all the commands of the cli"/>
     <meta property="og:image" content="https://www.mmp-y.com/owl-412.svg"/>
