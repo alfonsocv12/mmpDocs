@@ -6,30 +6,25 @@ import Subtitle from 'components/subtitle'
 
 ## Installation
 
-Because the program is on alpha at this point we just have one way to install it.
-python ^3 is required.
+##### Requirements
+
+Python 3.6+
+
+* [virtualenv](https://virtualenv.pypa.io/en/latest/) for the envs
+* [docopt](http://docopt.org/) for command handling and docs
+
+To install mmp:
 
 ```bash
 $ pip3 install mmp
 ```
 
-## First commands
+### First commands
 
-For the program to work you need to use the python standard requirements.txt, I'm
-thinking about moving that to a json base modules file but we will see how far
-that future is.
-
-You can use the mmp init to create your requirements.txt file and pip_modules.
-
-<Callout>
-  Adding pip_modules to git ignore its recommended
-</Callout>
-
-### Init
+For installing modules into your project
 
 ```bash
-$ mmp init
-requirements.txt pip_modules/
+$ mmp install [module_name]
 ```
 
 ### Install modules
@@ -49,64 +44,37 @@ the requirements.txt file adding the module like this.
 
 ### Uninstall
 
-You can also uninstall modules by running the uninstall command
+Uninstalling modules:
 
 ```bash
 $ mmp uninstall [module_name]
 ```
 
-This will remove the module from the requirements.txt
+### Run project
 
-<Callout emoji='👇🏾'>
-  The program does not uninstall the modules that were installed with the uninstall
-  module.
-  <br/>
-  If you want to reinstall all the modules run this command
-
-  ```bash
-  $ mmp clean
-  ```
-</Callout>
-
-
-## Other people
-
-For other people to install all the modules wen they clone the repository its ass
-simple to just run
+This is how you run your scripts.
 
 ```bash
-$ mmp install
+$ mmp run my_perfect_script.py
 ```
 
-This will install all the modules on the requirements.txt file
-
-## Run project
-
-To run your project using you pip_modules its super easy, you just need to add the
-prefix mmp if you want to use a cli solution on your pip_modules or mmp run to run
-your program
+**by the way** if your script file name is run.py run this instead.
 
 ```bash
-$ mmp orator make:migration Example -m
 $ mmp run
 ```
 
-### mmp run
-
-The run command by default will run run.py file on the repository that the command
-was used, but you can add a specific file to run by adding the path at the end
+If you want to run a cli on your modules
 
 ```bash
-$ mmp run [path_to_file][file.py]
+$ mmp orator make:model User 
 ```
 
-## Needing More
+### Help
 
-Every command on the cli has helps build in just add -h to whatever you want to
-know about.
+If you need help, just add -h to whatever you want to know about
 
-Also [here](docs) are a more deep documentation of the cli
-
-<Callout emoji='🚫'>
-  The deep docs are not ready yet
-</Callout>
+```bash
+$ mmp -h
+$ mmp run -h
+```
