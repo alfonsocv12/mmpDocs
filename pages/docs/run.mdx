@@ -1,1 +1,71 @@
+import Subtitle from 'components/subtitle'
+
 # Run
+<Subtitle title="Scripts and Modules cli"/>
+
+The first section of the cli is the run section, you can run your own python scripts
+of your project or the cli solutions of your modules.
+
+## Script
+
+### Options
+
+This are the available options on the run command, you can run without a specific
+file that will take run.py ass the running file to load
+
+```bash
+Run python files with the enviroment modules
+
+usage: run [<file>]
+```
+
+Or specifying a file by adding the file path and name after the run statement.
+
+```bash
+$ mmp run [path_to_file][file_name]
+```
+
+The default path is the relative path so if you'r in the file folder you can run
+this
+
+```bash
+$ mmp run [file_name]
+```
+
+### Example
+
+Taking this example into consideration
+
+![img](/examples/run/code_structure.png)
+
+Where requirements.txt file has this values
+
+```text
+orator=0.9.9
+requests==2.25.1
+```
+
+And in the other hand run.py and run_2.py has this
+
+```python
+import requests
+from orator import Model
+
+print('run '+[1 on run 2 on run_2])
+print(requests.get('https://google.com'))
+```
+
+The run.py its setted by default to the mmp run command but you can send a specific
+one like this.
+
+![img](/examples/run/run_scripts.png)
+
+## Modules cli
+
+In the case that you install a module that has some cli commands that you want to
+run, you can use the pass command that its implemented on mmp. On this example we
+are using a orm named orator
+
+```bash
+$ mmp orator make:model Example -m
+```

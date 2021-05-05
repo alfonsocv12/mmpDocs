@@ -1,0 +1,42 @@
+import Callout from 'nextra-theme-docs/callout'
+import Subtitle from 'components/subtitle'
+
+# Intro to the cli
+<Subtitle title="Know everything"/>
+
+This cli program has been created basing on docker-compose structure. Using the
+same [docopt](http://docopt.org/) library, this allows us to have a -h option on every command that we
+have.
+
+<Callout>
+  I'm looking to make a refactor on the structure based on pip repository, because
+  the single class its getting to big and a little confusing
+  [pip source code](https://github.com/pypa/pip)
+</Callout>
+
+If you do the -h on the index command you can see all the commands available on
+the cli.
+
+
+```bash
+$ mmp -h
+Install and handle your pip dependencies fast and easy
+
+usage:
+    mmp [options] [--] [COMMAND] [ARGS...]
+    mmp -h|--help
+
+Options:
+    -v, --version            Shows mmp version
+
+Commands:
+    run                      Run python files with the environment modules
+    install                  Install your libraries on pip_modules
+    init                     Create requirements.txt to to add python libraries
+    upgrade                  Upgrade module on the pip_modules
+    uninstall                remove libraries from pip_modules
+    clean                    Clean all the libraries and reinstall requirements
+```
+
+Here we have all the specific commands that you can use. the only one that isn't
+documented in here its the command bypass to the pip_modules.
