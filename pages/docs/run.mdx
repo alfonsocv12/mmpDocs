@@ -1,4 +1,5 @@
 import Subtitle from 'components/subtitle'
+import Callout from 'nextra-theme-docs/callout'
 
 # Run
 <Subtitle title="Scripts and Modules cli"/>
@@ -60,12 +61,30 @@ one like this.
 
 ![img](/examples/run/run_scripts.png)
 
+## Run.py file
+
+In case that you want to define scripts to run simple create a run.py file with
+this structure.
+
+<Callout>
+  This is the same as runing mex command so python before what you want to do
+  is required
+</Callout>
+
+```python
+SCRIPTS = {
+    'start': "python (Here is where your scripts will go)"
+}
+```
+
+Keep in mind that run is used to mmp run a file so its not possible to use it in
+scripts file
+
 ## Modules cli
 
 In the case that you install a module that has some cli commands that you want to
-run, you can use the pass command that its implemented on mmp. On this example we
-are using a orm named orator
+run, you can use mex.
 
 ```bash
-$ mmp orator make:model Example -m
+$ mex orator make:model Example -m
 ```
